@@ -55,9 +55,10 @@ jobs:
     needs: test
     defaults: 
       run: |
-        cd actiondemo
+        working-directory: actiondemo
         
     steps:
+      - run: cd actiondemo
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
         uses: actions/setup-java@v1
