@@ -53,9 +53,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Run mvn build and generate coverage report
     needs: test
-    defaults: 
-      run:
-        working-directory: actiondemo
+    #defaults: 
+    #  run:
+    #    working-directory: actiondemo
         
     steps:
       - run: cd actiondemo
