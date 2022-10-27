@@ -71,5 +71,5 @@ jobs:
         working-directory: actiondemo
         if: success()
         run: |          
-          curl -s https://codecov.io/bash | bash
+          curl -s https://codecov.io/bash | bash | cd actiondemo
         shell: bash
