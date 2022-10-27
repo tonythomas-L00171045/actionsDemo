@@ -54,7 +54,7 @@ jobs:
     name: Run mvn build and generate coverage report
     needs: test
     defaults: 
-      run: |
+      run:
         working-directory: actiondemo
         
     steps:
