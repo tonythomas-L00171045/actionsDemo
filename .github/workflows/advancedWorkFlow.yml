@@ -70,6 +70,4 @@ jobs:
       - name:  Upload coverage reports to Codecov with GitHub Action
         working-directory: actiondemo
         if: success()
-        run: |          
-          curl -s https://codecov.io/bash | bash | cd actiondemo
-        shell: bash
+        run: find .
