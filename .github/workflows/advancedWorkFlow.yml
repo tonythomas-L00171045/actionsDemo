@@ -53,6 +53,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Run mvn build and generate coverage report
     needs: test
+    defaults: 
+      run: 
+        working-directory: actiondemo
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
