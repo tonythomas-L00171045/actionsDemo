@@ -73,3 +73,5 @@ jobs:
         run: find .
       - name: Real upload
         uses: codecov/codecov-action@v3
+        with:
+          directory: actiondemo
