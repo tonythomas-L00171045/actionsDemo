@@ -60,11 +60,11 @@ jobs:
         with:
           java-version: 1.8
       - name: Build with Maven
-        run: mvn -B package --file pom.xml -Dmaven.test.skip=true
+        run: mvn -B package --file actiondemo/pom.xml -Dmaven.test.skip=true
       - name: generate report codecov
         run: mvn cobertura:cobertura
-      - name:  Upload coverage reports to Codecov with GitHub Action
-        uses: mariagriffin/actionsDemo@v3
+      - name: Upload coverage reports to Codecov with GitHub Action
+        uses: tonythomas-L00171045/actionsDemo@v3
         with:
          gcov: true
          files: ./coverage1.xml
