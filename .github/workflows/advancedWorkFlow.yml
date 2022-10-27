@@ -66,8 +66,8 @@ jobs:
       - name: Build with Maven
      #   run: mvn -B package --file pom.xml -Dmaven.test.skip=true
         run: mvn -B --file pom.xml
-     # - name: generate report codecov
-     #   run: mvn cobertura:cobertura --file pom.xml
+      - name: generate report codecov
+        run: mvn cobertura:cobertura --file pom.xml
       - name:  Upload coverage reports to Codecov with GitHub Action
         working-directory: actiondemo
         if: success()
